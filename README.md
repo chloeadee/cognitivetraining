@@ -1,1 +1,1 @@
-# cognitivetraining.github.io
+# cognitivetraining
