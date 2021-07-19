@@ -5,7 +5,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-202044607-1');
-  ga('set', 'userID', {{USER_ID}});
+  ga('set', 'userId', {{USER_ID}}); // Set the user ID using signed-in user_id.
 </script>
 
 <!-- Google Tag Manager -->
@@ -15,3 +15,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TPT8882');</script>
 <!-- End Google Tag Manager -->
+
+<script>$('a').each(function() {
+var querystring = window.location.search.substring(1);
+var href = $(this).attr('href');
+
+if (href) {
+    href += (href.match(/\?/) ? '&' : '?') + querystring;
+    $(this).attr('href', href);
+}
+</script>
