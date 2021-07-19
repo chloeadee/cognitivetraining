@@ -50,14 +50,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-TPT8882');</script>
 <!-- End Google Tag Manager -->
 
-<script>$('a').each(function() {
-var querystring = window.location.search.substring(1);
-var href = $(this).attr('href');
-
-if (href) {
-    href += (href.match(/\?/) ? '&' : '?') + querystring;
-    $(this).attr('href', href);
-}
+<script>var queryString = new URL(window.location).search;
+document.querySelectorAll("[href]").forEach(link => {
+            if (link.href.startsWith("/") || link.href.startsWith(".") || (link.href.startsWith("http") && link.href.include(window.location.hostname)) {
+                    var current = link.href;
+                    link.href = current + queryString;
+                }
+            });
 </script>
 
 <style type="text/css">
