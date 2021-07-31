@@ -38,9 +38,10 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+
   gtag('config', 'UA-202044607-1');
-  ga('set', 'userId', {{USER_ID}}); // Set the user ID using signed-in user_id
 </script>
+
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -49,18 +50,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TPT8882');</script>
 <!-- End Google Tag Manager -->
-
-<script>
-  document.onclick = function (e) {
-    e = e ||  window.event;
-    var element = e.target || e.srcElement;
-    if (element.tagName == 'A') {
-        var q = location.href; 
-        window.location.href = element.href + q.substring( q.indexOf( "?" ) );
-        return false;
-    }
-};
-</script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -316,6 +305,12 @@ $(document).ready(function () {
 
 
 <p><img src="CSN_logo.png" width="20%" style="display: block; margin: auto 0 auto auto;" /></p>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPT8882" height="0" width="0" style="display:none;visibility:hidden">
+</iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
 <hr />
 <hr />
 <div id="welcome-to-the-cognitive-training-study" class="section level2">
@@ -323,11 +318,11 @@ $(document).ready(function () {
 <hr />
 <hr />
 <p>This website gives you access to daily cognitive training sessions that aim to improve your focus.</p>
-<p>You can find your training sessions for each day under their respective tabs at the top of the page.</p>
+<p>You can find your training sessions for each day under their respective tabs at the top of the page. We ask that you complete the training session three times each day (for a total of 15 minutes per day).</p>
 <p>We ask that at the end of your last exercise each day, you fill out a short questionnaire of your experience. You can find these on each daily page.</p>
 <p><br></p>
 <p>If you have any questions, feel free to head to the <a href="faqs.html">frequently asked questions</a> section to get some answers.</p>
-<p>Alternatively, you can send an email to Chloe at <a href="mailto:chloe.dziego@mymunisa.edu.au" class="email">chloe.dziego@mymunisa.edu.au</a>.</p>
+<p>Alternatively, you can send an email to Chloe at <a href="mailto:chloe.dziego@mymail.unisa.edu.au" class="email">chloe.dziego@mymail.unisa.edu.au</a>.</p>
 <p><br></p>
 <p>Thank you for participating in the study!</p>
 </div>

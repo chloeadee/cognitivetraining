@@ -38,9 +38,10 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+
   gtag('config', 'UA-202044607-1');
-  ga('set', 'userId', {{USER_ID}}); // Set the user ID using signed-in user_id
 </script>
+
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -49,18 +50,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TPT8882');</script>
 <!-- End Google Tag Manager -->
-
-<script>
-  document.onclick = function (e) {
-    e = e ||  window.event;
-    var element = e.target || e.srcElement;
-    if (element.tagName == 'A') {
-        var q = location.href; 
-        window.location.href = element.href + q.substring( q.indexOf( "?" ) );
-        return false;
-    }
-};
-</script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -328,16 +317,15 @@ $(document).ready(function () {
 <h2>Welcome to your first day of cognitive training.</h2>
 <hr />
 <hr />
-<p>Your first cognitive training session is presented below. This technique aims to improve your skills of paying attention.</p>
-<p>We encourage you to participate in this exercise <strong>three times</strong> today. As the session only takes <strong>5 minutes</strong>, it can be easily incorporated into your everyday routine.</p>
+<p>Your first cognitive training session is presented in the audio below. This technique aims to improve your skills of paying attention.</p>
+<p>We encourage you to participate in this exercise <strong>three times</strong> today. As all the sessions only take <strong>5 minutes</strong>, they can be easily incorporated into your everyday routine. Try not to play the session three times in a row, but space them out across your day.</p>
 <p>There is no right or wrong way to complete these sessions. If you have any questions before beginning, head to the <a href="faqs.html">frequently asked questions</a> to get some more information on how and when to complete the exercises and how you should feel.</p>
 <p>Before pressing play, make sure you find a relatively quiet spot, free of distraction, to allow your full focus on the task. Check in with your posture. You are welcome to sit or stand, and feel free to keep your eyes open softly, or closed. It’s completely up to you.</p>
 <p>When you’ve completed the exercise for the third time today, please follow this link to fill out a <a href="%22https://survey.au1.qualtrics.com/jfe/form/SV_4OcqUWzV9MoatQa%22">short questionnaire</a> about your experience. It’ll only take 1 minute.</p>
-<p>Remember, if you aren’t able to complete all the sessions today, that’s fine! You can try again tomorrow.</p>
 <p><br></p>
 <hr />
 <audio controls="TRUE">
-<source src="3minbreathing.mp3" type="audio/mpeg"/>
+<source src="day_1_audio.mp3" type="audio/mpeg"/>
 </audio>
 <hr />
 </div>

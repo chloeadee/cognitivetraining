@@ -4,9 +4,10 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+
   gtag('config', 'UA-202044607-1');
-  ga('set', 'userId', {{USER_ID}}); // Set the user ID using signed-in user_id
 </script>
+
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -15,15 +16,3 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TPT8882');</script>
 <!-- End Google Tag Manager -->
-
-<script>
-  document.onclick = function (e) {
-    e = e ||  window.event;
-    var element = e.target || e.srcElement;
-    if (element.tagName == 'A') {
-        var q = location.href; 
-        window.location.href = element.href + q.substring( q.indexOf( "?" ) );
-        return false;
-    }
-};
-</script>
